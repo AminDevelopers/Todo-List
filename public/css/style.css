@@ -64,6 +64,7 @@ html {
 .trier {
     padding: 1em;
     display: grid;
+    display: none;
     place-content: center;
 }
 
@@ -77,7 +78,7 @@ html {
 
 /* * btns */
 .btns {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-bottom: 3em;
@@ -94,6 +95,7 @@ html {
 /* * content boxes */
 .content {
     background-color: #FAF6E9;
+    display: none;
     color: black;
     padding: 2em;
     font-size: 1.6rem;
