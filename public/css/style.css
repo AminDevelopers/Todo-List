@@ -4,4 +4,114 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: poppins;
+    display: grid;
+    place-content: center;
+}
+
+/* * main */
+.main_container {
+    background-color: #494949;
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
+}
+
+/* * nav */
+
+.nav_container {
+    color: black;
+    border-radius: 15px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 3em;
+    background-color: #ECE8D9;
+}
+
+.nav_title {
+    flex: 1;
+    margin-right: 5em;
+}
+
+.nav_title span {
+    font-size: 1.3rem;
+    color: black;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.nav_input {
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 5px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    margin-inline: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* * trier */
+.trier {
+    padding: 1em;
+    display: grid;
+    place-content: center;
+}
+
+.trier a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: poppins;
+}
+
+/* * btns */
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.btns>* {
+    margin-inline: 1em;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/* * content boxes */
+.content {
+    background-color: #FAF6E9;
+    color: black;
+    padding: 2em;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: poppins;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+
+.block>a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    margin-inline: 1em;
+}
+
+
+.block>a:not(:first-of-type) {
+    margin-top: 1em;
 }
