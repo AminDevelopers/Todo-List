@@ -41,6 +41,25 @@ btnTask.addEventListener("click", () => {
       });
     });
     let deleteBtn = document.createElement("button");
+    deleteBtn.addEventListener("click", () => {
+      let btn1 = document.createElement("button");
+      let textBtn1 = document.createTextNode("Supprimé");
+
+      btn1.addEventListener("click", () => {
+        taskLi.remove();
+      });
+      btn1.appendChild(textBtn1);
+      let btn2 = document.createElement("button");
+      let btn2Text = document.createTextNode("Annulé");
+      btn2.addEventListener("click", () => {
+        btn1.remove();
+        btn2.replaceWith(deleteBtn);
+      });
+      btn2.appendChild(btn2Text);
+      deleteBtn.replaceWith(btn1);
+      // taskLi.appendChild(btn1);
+      taskLi.appendChild(btn2);
+    });
     deleteBtn.className = "deleteBtn";
     deleteBtn.innerText = "delete";
     taskLi.style.marginTop = "2em";
@@ -68,10 +87,12 @@ taskList.addEventListener("click", (event) => {
     }
   }
   // deleting tasks
-  if (event.target.classList.contains("deleteBtn")) {
-    let taskLi = event.target.parentElement;
-    taskList.removeChild(taskLi);
-  }
+  // let myFunction = () => {
+  //   if (event.target.classList.contains("deleteBtn")) {
+  //     let taskLi = event.target.parentElement;
+  //     taskList.removeChild(taskLi);
+  //   }
+  // };
 });
 // function to link my github
 function github() {
