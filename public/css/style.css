@@ -6,4 +6,137 @@ html {
     box-sizing: border-box;
     display: grid;
     place-content: center;
+    background-color: black;
+    font-family: poppins;
+}
+
+h1 {
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    /* background-color: #9893DA;
+     */
+    background: linear-gradient(90deg, rgba(233, 233, 233, 1) 0%, rgba(152, 147, 208, 1) 50%, rgba(232, 232, 232, 1) 100%);
+    color: #FBFEF9;
+    padding: 3em 4em;
+    border-radius: 15px;
+}
+
+.social {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social p {
+    color: white;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
+.social i {
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    transition: all 100ms ease-in-out;
+}
+
+.social i:hover {
+    scale: 1.1;
+    transition: all 100ms ease-in-out;
+}
+
+li::marker {
+    color: black;
+}
+
+/* JS */
+
+#taskInput {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 2.5em;
+    margin-right: 5em;
+}
+
+#addTaskBtn {
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 1.6em;
+}
+
+.newDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn1 {
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    padding: 1em 1.6em;
+}
+
+.btn2 {
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 1.6em;
+}
+
+.btn3 {
+    border: none;
+    background: black;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 1.6em;
+}
+
+.deleteBtn {
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 1.6em;
+}
+
+.modifyBtn {
+    border: none;
+    background: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    padding: 1em 1.6em;
 }
