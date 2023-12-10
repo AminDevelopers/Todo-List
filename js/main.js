@@ -25,11 +25,15 @@ btnTask.addEventListener("click", () => {
     modifyBtn.innerText = "modify";
     modifyBtn.addEventListener("click", () => {
       let valmodif = document.createElement("input");
-      // taskLi.appendChild(valmodif);
+      valmodif.style.border = "2px solid black";
+      valmodif.className = "valmodif";
+      valmodif.setAttribute("placeholder", "Enter your modification");
       taskLi.insertBefore(valmodif, deleteBtn);
 
       let confirmerChange = document.createElement("button");
       let txtChange = document.createTextNode("Valider");
+      confirmerChange.className = "btn_valider";
+      confirmerChange.style.border = "2px solid black";
       confirmerChange.appendChild(txtChange);
       taskLi.appendChild(confirmerChange);
       modifyBtn.replaceWith(confirmerChange);
@@ -43,6 +47,7 @@ btnTask.addEventListener("click", () => {
     let deleteBtn = document.createElement("button");
     deleteBtn.addEventListener("click", () => {
       let btn1 = document.createElement("button");
+      btn1.className = "btn1";
       let textBtn1 = document.createTextNode("Supprimé");
 
       btn1.addEventListener("click", () => {
@@ -50,6 +55,7 @@ btnTask.addEventListener("click", () => {
       });
       btn1.appendChild(textBtn1);
       let btn2 = document.createElement("button");
+      btn2.className = "btn2";
       let btn2Text = document.createTextNode("Annulé");
       btn2.addEventListener("click", () => {
         btn1.remove();
@@ -86,13 +92,6 @@ taskList.addEventListener("click", (event) => {
       taskLi.style.color = "white";
     }
   }
-  // deleting tasks
-  // let myFunction = () => {
-  //   if (event.target.classList.contains("deleteBtn")) {
-  //     let taskLi = event.target.parentElement;
-  //     taskList.removeChild(taskLi);
-  //   }
-  // };
 });
 // function to link my github
 function github() {
