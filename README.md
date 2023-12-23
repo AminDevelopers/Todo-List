@@ -31,4 +31,4 @@ Check out the live demo.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/todo-list.git
+   git clone https://github.com/AminDevelopers/todo-list.git
